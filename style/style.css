@@ -284,14 +284,156 @@ body{
     width: 8px;
 }
 
+/* Single.php */
+#single-content{
+    width: 80vw;
+    margin-left: var(--sidebar-width);
+    padding-left: 5vw;
+    padding-top: 4vw;
+    margin-bottom: 100px;
+}
+
+#single-content p{
+    width: 60%;
+}
+
+.small-paragraph{
+    color: #8D9EAD;
+    font-size: 15px;
+}
+
+#single-content h2{
+    font-size: 25px;
+    font-family: 'Ubuntu';
+    letter-spacing: -2%;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-bottom: 18px;
+}
+
+#single-content h3{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 17px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+table th{
+    font-size: 18px;
+    font-family: 'Exo 2';
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #676767;
+    letter-spacing: -2%;
+    text-align: left;
+    border-bottom: #676767 solid 2px;
+    padding: 15px 0;
+    border: none;
+}
+
+tr td{
+    /* border-bottom: 1px solid #e0e0e0; */
+    padding-top: 10px !important;
+    padding-bottom: 10px;
+    padding-right: 70px;
+}
+
+tr:first-child {
+    border-bottom: 2px solid #F2F2F2;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td:first-child {
+    width: 150px;
+    text-align: center;
+}
+
+td p{
+    width: 100% !important;
+}
+
+tr td img{
+    width: 120px;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.download {
+    display: inline-flex;
+    align-items: center;
+    color: #0F8592;
+    text-decoration: none;
+    font-size: 0.86em;
+    font-family: 'Exo 2';
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download::after {
+    content: 'download';
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.2em;
+    margin-left: 5px;
+    color: #0F8592;
+    text-decoration: none;
+}
+
+#main-colors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main-colors .color{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#main-colors .color .pigment{
+    width: 150px;
+    height: 50px;
+}
+
+#main-colors #purple .pigment{
+    background-color: #7E529B;
+}
+
+#main-colors #navy-blue .pigment{
+    background-color: #1A3C5B;
+}
+
+#main-colors #grey .pigment{
+    background-color: #8F8F8F;
+}
+
+#main-colors #teal .pigment{
+    background-color: #0F8592;
+}
+
+#main-colors #crimson .pigment{
+    background-color: #8C3B61;
+}
 
 
 
 /* Small Laptop */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-    body{
+    /* body{
         
-    }
+    } */
 
 }
 

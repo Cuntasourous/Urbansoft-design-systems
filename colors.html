@@ -42,49 +42,35 @@
                 </div>
             </div>
         </div>
-        <div id="content">
-            <div class="header">
-                <img src="static/images/diamond-pattern.png" width="20%" height="auto" alt="diamond pattern">
-                <div class="Header-Text">
-                    <img src="static/images/logo.png" width="154px" height="auto">
-                    <h2 class="subtitle">Design Systems</h2>
-                    <p>Design Ecosystem for building high-quality,<br> consistent user experiences at Urbansoft.</p>
+        <div id="single-content">
+            <h1>Colors</h1>
+            <p class="small-paragraph">Our Core colors are used to refer to our products.</p>
+            <h2>Brand Colors</h2>
+            <div id="main-colors">
+                <div id="purple" class="color">
+                    <div class="pigment"></div>
+                    <h4 class="name">Primary Purple</h4>
+                    <p class="small-paragraph">#7f58a6</p>
                 </div>
-            </div>
-            <div class="grey-bg">
-                <div class="flex tagline">
-                    <h1><span class="purple">Embrace</span><span class="dark-blue">  The Journey <br> Of Digital Innovation</span></h1>
-                    <p>Welcome to our design system - a living portal powering the continuous innovation of your brand experience. </p>
+                <div id="navy-blue" class="color">
+                    <div class="pigment"></div>
+                    <h4 class="name">Primary Purple</h4>
+                    <p class="small-paragraph">#7f58a6</p>
                 </div>
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <h2>Brand</h2>
-                        <p>Brand Fundamentals</p>
-                        <a href="#">
-                            <button class="arrow-button">Find out More<span class="arrow"></span></button>
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <h2>Design</h2>
-                        <p>Brand Fundamentals</p>
-                        <a href="#">
-                            <button class="arrow-button">Find out More<span class="arrow"></span></button>
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <h2>Guidelines</h2>
-                        <p>Brand Fundamentals</p>
-                        <a href="#">
-                            <button class="arrow-button">Find out More<span class="arrow"></span></button>
-                        </a>
-                    </div>
-                    <div class="grid-item">
-                        <h2>Developers</h2>
-                        <p>Brand Fundamentals</p>
-                        <a href="#">
-                            <button class="arrow-button">Find out More<span class="arrow"></span></button>
-                        </a>
-                    </div>
+                <div id="grey" class="color">
+                    <div class="pigment"></div>
+                    <h4 class="name">Primary Purple</h4>
+                    <p class="small-paragraph">#7f58a6</p>
+                </div>
+                <div id="teal" class="color">
+                    <div class="pigment"></div>
+                    <h4 class="name">Primary Purple</h4>
+                    <p class="small-paragraph">#7f58a6</p>
+                </div>
+                <div id="crimson" class="color">
+                    <div class="pigment"></div>
+                    <h4 class="name">Primary Purple</h4>
+                    <p class="small-paragraph">#7f58a6</p>
                 </div>
             </div>
         </div>
@@ -95,6 +81,18 @@
                 header.classList.toggle('collapsed');
                 const menuItems = header.nextElementSibling;
                 menuItems.classList.toggle('expanded');
+            });
+        });
+
+        document.querySelectorAll('#purple').forEach(purple => {
+            purple.addEventListener('click', function() {
+                const colorCode = this.nextElementSibling.nextElementSibling.textContent;
+                navigator.clipboard.writeText(colorCode).then(() => {
+                    // Optional: Provide visual feedback
+                    alert('Color code copied: ' + colorCode);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
             });
         });
     </script>

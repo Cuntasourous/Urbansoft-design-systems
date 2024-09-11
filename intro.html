@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Urbansoft</title>
+</head>
+<body>
+    <div class="flex">
+        <div id="sidebar-menu">
+            <div class="favicon">
+                <img src="static/images/favicon.png" width="30px" height="30px" alt="favicon">
+                <h2 class="subtitle">Design Systems</h2>
+            </div>
+            <div class="menu-category">
+                <div class="menu-category-header">Overview</div>
+                <div class="menu-items">
+                    <a href="#"><div class="menu-item">Introduction</div></a>
+                    <a href="#"><div class="menu-item">Brand Identity</div></a>
+                </div>
+            </div>
+            <div class="menu-category">
+                <div class="menu-category-header">Design</div>
+                <div class="menu-items">
+                    <a href="#"><div class="menu-item">Logo</div></a>
+                    <a href="#"><div class="menu-item">Colors</div></a>
+                    <a href="#"><div class="menu-item">Typography</div></a>
+                    <a href="#"><div class="menu-item">Spacing</div></a>
+                    <a href="#"><div class="menu-item">Imagery</div></a>
+                    <a href="#"><div class="menu-item">Icons</div></a>
+                    <a href="#"><div class="menu-item">Gradients/Textures</div></a>
+                </div>
+            </div>
+            <div class="menu-category">
+                <div class="menu-category-header">Guidelines</div>
+                <div class="menu-items">
+                    <div class="menu-item">Item 3.1</div>
+                    <div class="menu-item">Item 3.2</div>
+                    <div class="menu-item">Item 3.3</div>
+                </div>
+            </div>
+        </div>
+        <div id="single-content">
+            <h1>Introduction</h1>
+            <p class="small-paragraph">Our goal is to streamline the design process while upholding the highest standards of usability, accessibility and brand consistency.</p>
+            <p>Our brand guide provides the foundation for crafting intuitive, impactful experiences across our products and platforms. By leveraging shared design assets, guidelines and best practices, we can deliver consistency at scale while empowering creativity.</p>
+            <p>We ensure consistency and empower teams to build experiences that delight our customers. We do this by providing a living collection of tested patterns, components, guidelines and other tools.</p>
+            <h2>Principles</h2>
+            <h3>Build Shared Resources</h3>
+            <p>We focus on consolidating our design knowledge into shared assets that are accessible to all teams. This includes things like colors, typography, icons and UI components.</p>
+            <h3>Enable Fast Delivery</h3>
+            <p>Access to a centralized hub of reusable solutions helps teams build with speed and quality. Our system supports both design and development roles.</p>
+            <h3>Reusability</h3>
+            <p>Ready-made, standards-compliant components allow you to spend less time on repetitive tasks and more on creative problem-solving. Modify or extend our existing components when possible rather than rebuilding from scratch.</p>
+            <h2>Design Workflow</h2>
+            <p>Explore the foundations of our system including color, typography, spacing and more before diving into design. Leveraging these elements will ensure consistency and accessibility in your work.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu-category-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('collapsed');
+                const menuItems = header.nextElementSibling;
+                menuItems.classList.toggle('expanded');
+            });
+        });
+    </script>
+</body>
+</html>
